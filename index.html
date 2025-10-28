@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header>
     <div class="container">
         <div class="nav">
-            <h1> Flashcards</h1>
+            <img
+      src="Screenshot 2025-10-28 182549.png"
+      width= 3000px
+      height= 250px
+      
+      />
+            
         </div>
         <button onclick="showCreateCardBox()">New Card</button>
         <button onclick="deleteFlashcards()">Delete Cards</button>
@@ -21,8 +28,8 @@
     <div class="create-box">
         <h2 style="text-align: center;color: black;
         ">Make Flashcards</h2>
-        <label for="question">Question</label>
-        <textarea id="question"></textarea>
+  <!-- <label for="question">Question</label>
+        <textarea id="question"></textarea>-->  
         <br>
         <label for="question">Question</label>
         <textarea id="question"></textarea>
@@ -30,10 +37,8 @@
         <label for="answer">Answer</label>
         <textarea id="answer"></textarea>
         <div>
-            <button onclick="addFlashcard()">Save</
-            button>
-            <button onclick="hideCreateBox()">Close</
-            button>
+            <button onclick="addFlashcard()">Save</button>
+            <button onclick="hideCreateBox()">Close</button>
         </div>
     </div>
     <div class="flashcards"></div>

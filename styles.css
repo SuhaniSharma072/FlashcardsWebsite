@@ -1,12 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Cormorant:wght@400;600&family=Poppins:wght@300;400&display=swap");
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+   
+
 }
 
 body{
     font-size:1rem;
     background-color:whitesmoke;
+
 
 }
 
@@ -25,6 +31,7 @@ button{
 
 button:hover{
     background-color: black;
+    color: white;
 }
 
 .container{
@@ -62,29 +69,7 @@ button:hover{
     width: fit-content;
 }
 
-.flashcard{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    margin-top: 10px;
-    padding: 0 10px;
-}
 
-.flashcard{
-    width: 370px;
-    height: 200px;
-    word-wrap: break-word;
-    margin: 10px;
-    background-color: white;
-    box-shadow: 0 2px 4px black;
-}
-
-.flashcard h2{
-    font-size: 1rem;
-}
 
 @media (max-width:480px) {
     .nav{
@@ -97,4 +82,41 @@ button:hover{
     .flashcard{
         width: 100%;
     }
+}
+
+
+
+.flashcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.flashcard {
+    width: 300px;
+    height: 180px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #a9bb9d;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.flashcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px #a9bb9d;
+}
+
+.flashcard h2 {
+    font-size: 1.1rem;
+    color: #a9bb9d;
 }
